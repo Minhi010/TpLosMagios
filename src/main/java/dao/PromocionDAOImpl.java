@@ -6,12 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-
-import exceptions.AtraccionException;
 import exceptions.MissingDataException;
 import exceptions.PromocionException;
 import jdbc.ConnectionProvider;
@@ -21,7 +18,6 @@ import model.AxB;
 import model.Porcentual;
 import model.Promocion;
 import model.Tipo;
-import model.Usuario;
 
 public class PromocionDAOImpl implements PromocionDAO {
 

@@ -41,7 +41,6 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 		Tipo preferencia = Tipo.valueOf(rs.getString("Preferencia").toUpperCase());
 
 		return new Usuario(nombre, presupuesto, tiempo, preferencia);
-
 	}
 
 	public int actualizarUsuario(Usuario usuario) {
@@ -59,7 +58,6 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 		} catch (SQLException e) {
 			throw new MissingDataException(e);
 		}
-
 	}
 
 	public int aniadirPaseo(Producto producto, Usuario usuario) {
@@ -85,7 +83,5 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 		} catch (SQLException e) {
 			throw new MissingDataException(e);
 		}
-
 	}
-
 }
