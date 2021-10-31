@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionProvider {
-	private static String url = "jdbc:sqlite:C:\\Users\\Minh\\eclipse-workspace\\TierraMediaII\\TierraMediaII.db";
+	private static String url = "jdbc:sqlite:TierraMediaII.db";
 	private static Connection connection;
 	
 	public static Connection getConnection() throws SQLException {
